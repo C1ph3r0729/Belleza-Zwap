@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Belleza Zwap.LoginPage">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="wallpaper.jpg" Aspect="AspectFill" />
+            <BoxView Color="#c0699d" Opacity="0.8" />
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" Source="app.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30" />
+
+            <StackLayout Grid.Row="1" Padding="30,20">
+                <Entry Placeholder="Nombre y Apellido" PlaceholderColor="white" x:Name="lblNombre"/>
+                <Entry Placeholder="Direccion" PlaceholderColor="white" x:Name="lblDireccion" />
+                <Label Text="Que tan frecuente se arregla?" />
+                <Picker x:Name="pickTime" SelectedIndexChanged="PickerTime_SelectedIndexChanged"/>
+            </StackLayout>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
