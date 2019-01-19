@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Belleza Zwap.PersonalPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Preguntas Personales"
+                HorizontalOptions="Center" />
+
+            <Entry x:Name="txtPersonalidad"  Placeholder="Como le gusta la personalidad del estilista?" />
+            <Entry x:Name="txtPelo" Placeholder="Pelo Largo o Pelo Corto?" />
+            <Entry x:Name="txtMusic" Placeholder="Llevamos Musica" />
+            <Entry x:Name="txtPersonalid" Placeholder="Como es su personalidad?" />
+            <Entry x:Name="txtProducto" Placeholder="Algun Producto en particular?" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

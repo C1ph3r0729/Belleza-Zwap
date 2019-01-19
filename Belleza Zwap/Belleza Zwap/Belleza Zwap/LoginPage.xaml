@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Belleza Zwap.LoginPage">
-    <ContentPage.Content>
+    <!-- <ContentPage.Content>
+        
         <Grid>
             <Image Source="wallpaper.jpg" Aspect="AspectFill" />
             <BoxView Color="#c0699d" Opacity="0.8" />
@@ -23,5 +24,22 @@
             </StackLayout>
             
         </Grid>
-    </ContentPage.Content>
+        
+    </ContentPage.Content>>-->
+
+    <StackLayout Orientation="Vertical">
+        <Label Text="Sin Texto" FontSize="Large" HorizontalOptions="Center" />
+
+        <Entry x:Name="txtName" Placeholder="Nombre y Apellido" />
+        <Entry x:Name="txtDireccion" Placeholder="Direccion" />
+        <Label Text="Que tan frecuente se arregla?" />
+        <Picker x:Name="pickTime" SelectedIndexChanged="PickerTime_SelectedIndexChanged"/>
+        <Entry x:Name="txtFecha" Placeholder="Dia y Mes de Cumpleanos"/>
+        <Label Text="Rango de edad: " />
+        <Picker x:Name="pickRange" SelectedIndexChanged="PickerRange_SelectedIndexChanged" />
+        <Entry x:Name="txtTarjeta" Placeholder="Tarjeta de Credito o Paypal" />
+        <Entry x:Name="txtRnc" Placeholder="RNC"/>
+
+        <Button Text="Registrarse" Clicked=""/>
+    </StackLayout>
 </ContentPage>
